@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    :root {
+        /* font family */
+        --redHat: 'Red Hat Text', 'sans-serif';
+
+        /* Primary */
+        --grayishBlue: hsl(237, 18%, 59%);
+        --softRed: hsl(345, 95%, 68%);
+
+        /* Neutral */
+        --default: hsl(0, 0%, 100%);
+        --darkDesaturatedBlue: hsl(236, 21%, 26%);
+        --veryDarkBlue: hsl(235, 16%, 14%);
+        --veryDarkBlackBlue: hsl(234, 17%, 12%);
+    }
+
+    body {
+        font-family: var(--redHat);
+        font-size: 14px;
+    }
+}
