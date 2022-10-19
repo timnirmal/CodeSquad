@@ -6,6 +6,7 @@ module.exports = {
             colors: {
                 grayishBlue: 'hsl(var(--grayishBlue) / <alpha-value>)',
                 softRed: 'hsl(var(--softRed) / <alpha-value>)',
+                darkPurple: 'hsl(var(--darkPurple) / <alpha-value>)',
                 default: 'hsl(var(--default) / <alpha-value>)',
                 darkDesaturatedBlue:
                     'hsl(var(--darkDesaturatedBlue) / <alpha-value>)',
@@ -15,6 +16,13 @@ module.exports = {
             },
             fontFamily: {
                 redHat: ['var(--redHat)'],
+            },
+            backgroundImage: {
+                'pattern-hills':
+                    "url('/images/pattern-hills.svg'), url('/images/bg-stars.svg')",
+            },
+            backgroundPosition: {
+                bottomAndCenter: 'bottom, center',
             },
         },
     },

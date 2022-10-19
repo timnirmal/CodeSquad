@@ -10,14 +10,15 @@
         --redHat: 'Red Hat Text', 'sans-serif';
 
         /* Primary */
-        --grayishBlue: hsl(237, 18%, 59%);
-        --softRed: hsl(345, 95%, 68%);
+        --grayishBlue: 237 18% 59%;
+        --softRed: 345 95% 68%;
+        --darkPurple: 251 16% 14%;
 
         /* Neutral */
-        --default: hsl(0, 0%, 100%);
-        --darkDesaturatedBlue: hsl(236, 21%, 26%);
-        --veryDarkBlue: hsl(235, 16%, 14%);
-        --veryDarkBlackBlue: hsl(234, 17%, 12%);
+        --default: 0 0% 100%;
+        --darkDesaturatedBlue: 236 21% 26%;
+        --veryDarkBlue: 235 16% 14%;
+        --veryDarkBlackBlue: 234 17% 12%;
     }
 
     body {
