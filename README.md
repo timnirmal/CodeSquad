@@ -1,49 +1,53 @@
-# ReactJs TailwindCSS Boilerplate
+# Frontend Mentor - Launch countdown timer solution
 
-## Added Configuration
+This is a solution to the [Launch countdown timer challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/launch-countdown-timer-N0XkGfyz-). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
--   VSCode
-    -   Associate TailwindCSS to CSS files
-    -   Format on Save
--   Prettier
+## Table of contents
 
-## Optional
+-   [Overview](#overview)
+    -   [The challenge](#the-challenge)
+    -   [Screenshot](#screenshot)
+    -   [Links](#links)
+-   [My process](#my-process)
+    -   [Built with](#built-with)
+    -   [Useful resources](#useful-resources)
+-   [Author](#author)
 
-### Remove connection to a remote repository
+## Overview
 
-```bash
-# Manage connections with other repositories
-$ git remote
+### The challenge
 
-# Display detailed output on the configuration of a remote
-$ git remote show <name>
+Users should be able to:
 
-# Remove the connection to the remote repository
-$ git remote rm <name>
-```
+-   See hover states for all interactive elements on the page
+-   See a live countdown timer that ticks down every second (start the count at 14 days)
+-   **Bonus**: When a number changes, make the card flip from the middle
 
-### Re-initialize repository
+### Screenshot
 
-```bash
-# Delete all git information
-rm -rf .git
+![]()
 
-# Recreate an empty repo
-git init
+### Links
 
-# Re-add all the files to the index
-git add --all
+-   Solution URL: [Solution]()
+-   Live Site URL: [Live Site]()
 
-# Capture a snapshot of the project's currently staged changes
-git commit -m 'initial commit'
-```
+## My process
 
-## References
+### Built with
 
--   [Prettier Config](https://prettier.io/docs/en/configuration.html)
--   [TailwindCSS Docs](https://tailwindcss.com/)
--   [Open CSS files in Tailwind CSS mode](https://stackoverflow.com/questions/47607602/how-to-add-a-tailwind-css-rule-to-css-checker)
--   [Format on Save in VSCode](https://linuxpip.org/vscode-format-on-save/)
--   [Remove origin from git repository](https://stackoverflow.com/questions/9224754/how-to-remove-origin-from-git-repository)
--   [Re-initialize the repository](https://stackoverflow.com/questions/27307091/how-to-remove-git-related-data-from-a-git-clone)
--   [Git remote information](https://www.atlassian.com/git/tutorials/syncing#)
+-   Semantic HTML5 markup
+-   CSS custom properties
+-   Flexbox
+-   CSS Grid
+-   Mobile-first workflow
+
+### Useful resources
+
+-
+
+## Author
+
+-   Website - [Fidel Lim](https://fidellim-portfolio.netlify.app/)
+-   Frontend Mentor - [@fidellim](https://www.frontendmentor.io/profile/fidellim)
+-   Github - [@fidellim](https://github.com/fidellim)
