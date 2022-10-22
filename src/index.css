@@ -25,4 +25,43 @@
         font-family: var(--redHat);
         font-size: 14px;
     }
+
+    .flip-card {
+        transform-style: preserve-3d;
+    }
+
+    .container-top,
+    .container-bottom {
+        perspective: 40rem;
+    }
+
+    .container-top {
+        perspective-origin: bottom;
+    }
+    .container-bottom {
+        perspective-origin: top;
+    }
+
+    .top-flip {
+        animation: flip-top 300ms ease-in forwards;
+        transform-origin: bottom;
+    }
+
+    @keyframes flip-top {
+        100% {
+            transform: rotateX(90deg);
+        }
+    }
+
+    .bottom-flip {
+        animation: flip-bottom 300ms ease-out 300ms forwards;
+        transform-origin: top;
+        transform: rotateX(90deg);
+    }
+
+    @keyframes flip-bottom {
+        100% {
+            transform: rotateX(0deg);
+        }
+    }
 }
