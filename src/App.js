@@ -4,10 +4,18 @@ import { useEffect, useState, useRef } from 'react'
 let interval
 
 function App() {
+    const daysRef = useRef()
+    const hoursRef = useRef()
+    const minutesRef = useRef()
+    const secondsRef = useRef()
     const [time, setTime] = useState({
+        prevDays: 0,
         days: 0,
+        prevHours: 0,
         hours: 0,
+        prevMinutes: 0,
         minutes: 0,
+        prevSeconds: 0,
         seconds: 0,
     })
 
@@ -41,11 +49,47 @@ function App() {
                 return
             }
 
-            setTime({
-                days,
-                hours,
-                minutes,
-                seconds,
+            setTime((prev) => {
+                if (prev.days !== days) {
+                    daysRef.current.classList.remove('animate')
+                    void daysRef.current.offsetWidth
+                    daysRef.current.classList.add('animate')
+                }
+                if (prev.hours !== hours) {
+                    hoursRef.current.classList.remove('animate')
+                    void hoursRef.current.offsetWidth
+                    hoursRef.current.classList.add('animate')
+                }
+                if (prev.minutes !== minutes) {
+                    minutesRef.current.classList.remove('animate')
+                    void minutesRef.current.offsetWidth
+                    minutesRef.current.classList.add('animate')
+                }
+                if (prev.seconds !== seconds) {
+                    secondsRef.current.classList.remove('animate')
+                    void secondsRef.current.offsetWidth
+                    secondsRef.current.classList.add('animate')
+                }
+
+                const prevDays =
+                    daysRef.current.querySelector('.top').textContent
+                const prevHours =
+                    hoursRef.current.querySelector('.top').textContent
+                const prevMinutes =
+                    minutesRef.current.querySelector('.top').textContent
+                const prevSeconds =
+                    secondsRef.current.querySelector('.top').textContent
+
+                return {
+                    prevDays,
+                    days,
+                    prevHours,
+                    hours,
+                    prevMinutes,
+                    minutes,
+                    prevSeconds,
+                    seconds,
+                }
             })
         }
 
@@ -62,10 +106,30 @@ function App() {
                 We're launching soon
             </h1>
             <div className="flex flex-wrap gap-[1.5rem]">
-                <Card time={time.days} text="days" />
-                <Card time={time.hours} text="hours" />
-                <Card time={time.minutes} text="minutes" />
-                <Card time={time.seconds} text="seconds" />
+                <Card
+                    time={time.days}
+                    prevTime={time.prevDays}
+                    text="days"
+                    ref={daysRef}
+                />
+                <Card
+                    time={time.hours}
+                    prevTime={time.prevHours}
+                    text="hours"
+                    ref={hoursRef}
+                />
+                <Card
+                    time={time.minutes}
+                    prevTime={time.prevMinutes}
+                    text="minutes"
+                    ref={minutesRef}
+                />
+                <Card
+                    time={time.seconds}
+                    prevTime={time.prevSeconds}
+                    text="seconds"
+                    ref={secondsRef}
+                />
             </div>
         </main>
     )
