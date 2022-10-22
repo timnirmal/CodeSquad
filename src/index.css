@@ -42,7 +42,8 @@
         perspective-origin: top;
     }
 
-    .top-flip {
+    /* .animate will be removed and add every second */
+    .animate .top-flip {
         animation: flip-top 300ms ease-in forwards;
         transform-origin: bottom;
     }
@@ -53,7 +54,7 @@
         }
     }
 
-    .bottom-flip {
+    .animate .bottom-flip {
         animation: flip-bottom 300ms ease-out 300ms forwards;
         transform-origin: top;
         transform: rotateX(90deg);
