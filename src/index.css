@@ -32,7 +32,7 @@
 
     .container-top,
     .container-bottom {
-        perspective: 40rem;
+        perspective: 30rem;
     }
 
     .container-top {
