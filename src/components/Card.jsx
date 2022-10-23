@@ -39,9 +39,9 @@ const Card = forwardRef(({ time, prevTime, text }, ref) => {
                     </div>
                 </div>
             </div>
-            <h3 className="text-grayishBlue uppercase tracking-[.2rem] text-[.5rem] sm:text-[1rem]">
+            <h2 className="text-grayishBlue uppercase tracking-[.2rem] text-[.5rem] sm:text-[1rem]">
                 {text}
-            </h3>
+            </h2>
         </div>
     )
 })
