@@ -21,7 +21,7 @@ function App() {
 
     useEffect(() => {
         const getTime = () => {
-            const countDownDate = new Date('Jan 5, 2024 15:37:25').getTime()
+            const countDownDate = new Date('Jan 1, 2023 00:00:00').getTime()
 
             // Get today's date and time
             const now = new Date().getTime()
