@@ -106,7 +106,7 @@ function App() {
             id="home"
             className="flex flex-col pt-[7rem] pb-[4rem] justify-start sm:justify-center items-center bg-darkPurple bg-pattern-hills bg-smallBgPos sm:bg-bottomAndCenter bg-no-repeat sm:bg-[length:contain,contain] min-w-screen min-h-screen"
         >
-            <h1 className="text-default text-center text-[.9rem] sm:text-[1.25rem] uppercase tracking-[.75rem] sm:grow-[.5] mb-[4em] sm:mb-[0] mx-[1rem]">
+            <h1 className="text-default text-center text-[.9rem] sm:text-[1.25rem] uppercase tracking-[.75rem] sm:grow-[.25] mb-[4em] sm:mb-[0] mx-[1rem]">
                 We're launching soon
             </h1>
             <div className="flex flex-wrap justify-center items-start gap-[.95rem] sm:gap-[1.5rem] sm:grow mx-[1rem]">
