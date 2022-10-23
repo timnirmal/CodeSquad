@@ -23,6 +23,7 @@ module.exports = {
             },
             backgroundPosition: {
                 bottomAndCenter: 'bottom, center',
+                smallBgPos: 'bottom 0 right 15%, center',
             },
         },
     },
