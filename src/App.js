@@ -1,4 +1,5 @@
 import Card from './components/Card'
+import { logos } from './constants'
 import { useEffect, useState, useRef } from 'react'
 
 let interval
@@ -130,6 +131,13 @@ function App() {
                     text="seconds"
                     ref={secondsRef}
                 />
+            </div>
+            <div className="flex gap-[2rem]">
+                {logos.map((logo) => (
+                    <a href="#home" key={logo.id} className="logo">
+                        <img src={logo.url} alt={logo.id} />
+                    </a>
+                ))}
             </div>
         </main>
     )
