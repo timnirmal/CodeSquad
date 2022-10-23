@@ -102,11 +102,14 @@ function App() {
     }, [time])
 
     return (
-        <main className="flex flex-col justify-center items-center bg-darkPurple bg-pattern-hills bg-bottomAndCenter bg-no-repeat  bg-[length:contain,contain] min-w-screen min-h-screen">
-            <h1 className="text-default uppercase tracking-[.35rem]">
+        <main
+            id="home"
+            className="flex flex-col pt-[7rem] pb-[4rem] justify-center items-center bg-darkPurple bg-pattern-hills bg-bottomAndCenter bg-no-repeat bg-[length:contain,contain] min-w-screen min-h-screen"
+        >
+            <h1 className="text-default text-[1.25rem] uppercase tracking-[.75rem] grow-[.5]">
                 We're launching soon
             </h1>
-            <div className="flex flex-wrap gap-[1.5rem]">
+            <div className="flex flex-wrap gap-[1.5rem] grow">
                 <Card
                     time={time.days}
                     prevTime={time.prevDays}
