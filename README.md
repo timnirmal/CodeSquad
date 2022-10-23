@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Solution]()
--   Live Site URL: [Live Site]()
+-   Solution URL: [Solution](https://github.com/fidellim/Launch-Countdown-Timer-FEM)
+-   Live Site URL: [Live Site](https://launch-countdown-timer-fem-fidellim.netlify.app/)
 
 ## My process
 
