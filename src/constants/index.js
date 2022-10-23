@@ -13,12 +13,12 @@ const logos = [
         url: facebook,
     },
     {
-        id: 'instagram',
-        url: instagram,
-    },
-    {
         id: 'pinterest',
         url: pinterest,
+    },
+    {
+        id: 'instagram',
+        url: instagram,
     },
 ]
 
