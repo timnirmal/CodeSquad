@@ -104,12 +104,12 @@ function App() {
     return (
         <main
             id="home"
-            className="flex flex-col pt-[7rem] pb-[4rem] justify-center items-center bg-darkPurple bg-pattern-hills bg-bottomAndCenter bg-no-repeat bg-[length:contain,contain] min-w-screen min-h-screen"
+            className="flex flex-col pt-[7rem] pb-[4rem] justify-start sm:justify-center items-center bg-darkPurple bg-pattern-hills bg-smallBgPos sm:bg-bottomAndCenter bg-no-repeat sm:bg-[length:contain,contain] min-w-screen min-h-screen"
         >
-            <h1 className="text-default text-[1.25rem] uppercase tracking-[.75rem] grow-[.5]">
+            <h1 className="text-default text-center text-[.9rem] sm:text-[1.25rem] uppercase tracking-[.75rem] sm:grow-[.5] mb-[4em] sm:mb-[0] mx-[1rem]">
                 We're launching soon
             </h1>
-            <div className="flex flex-wrap gap-[1.5rem] grow">
+            <div className="flex flex-wrap justify-center items-start gap-[.95rem] sm:gap-[1.5rem] sm:grow mx-[1rem]">
                 <Card
                     time={time.days}
                     prevTime={time.prevDays}
@@ -135,7 +135,7 @@ function App() {
                     ref={secondsRef}
                 />
             </div>
-            <div className="flex gap-[2rem]">
+            <div className="flex gap-[2rem] absolute bottom-[3rem] left-1/2 -translate-x-[50%] ">
                 {logos.map((logo) => (
                     <a href="#home" key={logo.id} className="logo">
                         <img src={logo.url} alt={logo.id} />
