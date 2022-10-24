@@ -21,6 +21,14 @@ function App() {
     })
 
     useEffect(() => {
+        const resetAnimation = (prev, curr, ref) => {
+            if (prev !== curr) {
+                ref.current.classList.remove('animate')
+                void ref.current.offsetWidth
+                ref.current.classList.add('animate')
+            }
+        }
+
         const getTime = () => {
             const countDownDate = new Date('Jan 1, 2023 00:00:00').getTime()
 
@@ -51,26 +59,10 @@ function App() {
             }
 
             setTime((prev) => {
-                if (prev.days !== days) {
-                    daysRef.current.classList.remove('animate')
-                    void daysRef.current.offsetWidth
-                    daysRef.current.classList.add('animate')
-                }
-                if (prev.hours !== hours) {
-                    hoursRef.current.classList.remove('animate')
-                    void hoursRef.current.offsetWidth
-                    hoursRef.current.classList.add('animate')
-                }
-                if (prev.minutes !== minutes) {
-                    minutesRef.current.classList.remove('animate')
-                    void minutesRef.current.offsetWidth
-                    minutesRef.current.classList.add('animate')
-                }
-                if (prev.seconds !== seconds) {
-                    secondsRef.current.classList.remove('animate')
-                    void secondsRef.current.offsetWidth
-                    secondsRef.current.classList.add('animate')
-                }
+                resetAnimation(prev.days, days, daysRef)
+                resetAnimation(prev.hours, hours, hoursRef)
+                resetAnimation(prev.minutes, minutes, minutesRef)
+                resetAnimation(prev.seconds, seconds, secondsRef)
 
                 const prevDays =
                     daysRef.current.querySelector('.top').textContent
