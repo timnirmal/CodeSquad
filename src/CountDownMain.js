@@ -24,7 +24,7 @@ function CountDownMain() {
         }
 
         const getTime = () => {
-            const countDownDate = new Date('Dec 3, 2022 15:30:00').getTime()
+            const countDownDate = new Date('Dec 3, 2022 16:06:00').getTime()
 
             // Get today's date and time
             const now = new Date().getTime()

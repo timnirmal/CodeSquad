@@ -1,4 +1,5 @@
 import logo from './code squad 3 logo.png'
+import sound from './sound.mp3'
 
 import React, { useCallback, useEffect, useRef } from 'react'
 import ReactCanvasConfetti from "react-canvas-confetti";
@@ -73,6 +74,12 @@ function Realistic() {
 
 
 export function NewQuestion() {
+
+    useEffect(() => {
+        const audio = new Audio(sound)
+        audio.play()
+    }
+    , [])
 
     // call Realistic() when page loads
 
