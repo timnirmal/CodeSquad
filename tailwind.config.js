@@ -3,6 +3,9 @@ module.exports = {
     content: ['./src/**/*.{js,jsx,ts,tsx}'],
     theme: {
         extend: {
+            spacing: {
+                '256': '300px',
+            },
             colors: {
                 grayishBlue: 'hsl(var(--grayishBlue) / <alpha-value>)',
                 softRed: 'hsl(var(--softRed) / <alpha-value>)',
@@ -26,6 +29,7 @@ module.exports = {
                 smallBgPos: 'bottom 0 right 15%, center',
             },
         },
+
     },
     plugins: [],
 }
