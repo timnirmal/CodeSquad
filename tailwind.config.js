@@ -19,6 +19,8 @@ module.exports = {
             },
             fontFamily: {
                 redHat: ['var(--redHat)'],
+                poppins: ['var(--poppins)'],
+                Rampart: ["Rampart One", "cursive"],
             },
             backgroundImage: {
                 'pattern-hills':
