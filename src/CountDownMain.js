@@ -24,7 +24,7 @@ function CountDownMain() {
         }
 
         const getTime = () => {
-            const countDownDate = new Date('Dec 3, 2022 15:22:00').getTime()
+            const countDownDate = new Date('Dec 3, 2022 15:30:00').getTime()
 
             // Get today's date and time
             const now = new Date().getTime()
@@ -87,7 +87,7 @@ function CountDownMain() {
 
                 <div className='flex flex-wrap justify-center items-start mt-24 p-12 '>
                     <h1 className='font-redHat font-extrabold text-transparent text-6xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 '>New
-                        Question in 5 Minutes</h1>
+                        Question in </h1>
                 </div>
 
                 <div className='flex flex-wrap justify-center items-start gap-[.95rem] '>
