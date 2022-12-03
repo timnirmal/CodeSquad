@@ -1,5 +1,5 @@
 import Card from './components/Card'
-import { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import logo from './code squad 3 logo.png'
 
 let interval
@@ -24,7 +24,7 @@ function CountDownMain() {
         }
 
         const getTime = () => {
-            const countDownDate = new Date('Dec 3, 2022 12:10:00').getTime()
+            const countDownDate = new Date('Dec 3, 2022 15:22:00').getTime()
 
             // Get today's date and time
             const now = new Date().getTime()
@@ -83,6 +83,11 @@ function CountDownMain() {
             >
                 <div className="absolute ml-1/2 mb-96 w-256 pb-12">
                     <img src={logo} alt="Group-1" border="0"/>
+                </div>
+
+                <div className='flex flex-wrap justify-center items-start mt-24 p-12 '>
+                    <h1 className='font-redHat font-extrabold text-transparent text-6xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 '>New
+                        Question in 5 Minutes</h1>
                 </div>
 
                 <div className='flex flex-wrap justify-center items-start gap-[.95rem] '>

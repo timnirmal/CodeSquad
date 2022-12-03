@@ -13,6 +13,9 @@ const Card = forwardRef(({ time, prevTime, text }, ref) => {
     if (time === 0 && prevTime === undefined) {
         time = 0
         prevTime = 0
+
+        // redirect to home page
+        window.location.href = '/newquestion'
     }
 
     return (
